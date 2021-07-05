@@ -6,6 +6,7 @@ import {
   HeroContent,
   HeroItems,
   HeroH1,
+  HeroH2,
   HeroP,
   HeroBtn
 } from './HeroElements';
@@ -23,8 +24,9 @@ const Hero = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <HeroContent>
         <HeroItems>
-          <HeroH1>Greatest Pizza Ever</HeroH1>
-          <HeroP>Ready in 60 seconds</HeroP>
+          <HeroH1>Food That You Can't Resist</HeroH1>
+          <HeroH2>Enjoy The Marvelous Taste</HeroH2>
+          <HeroP>We offers an expansive menu of Taiwanese and Chinese cuisine full of flavor. For us from Asia, We always miss our hometown food! With a wide range of meals including pork, fowl, beef, seafood, and tofu, we truly have a delicious option for everyone.</HeroP>
           <HeroBtn>Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>

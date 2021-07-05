@@ -1,3 +1,28 @@
 .text {
     background: #150f0f;
+    color: #fdc500;
+    background: #e31837;
+    background: #ffc500;
+    background: rgba(0, 0, 0, 0.478);
+    color: #010606;
+
 }
+
+
+
+/* export const NavLogo = styled(Link)`
+  color: #fff;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  padding-left: 20px;
+
+  @media screen and (max-width: 400px) {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+  }
+`; */

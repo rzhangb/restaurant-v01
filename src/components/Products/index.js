@@ -1,16 +1,21 @@
 import React from 'react';
 import {
   ProductsContainer,
-  ProductWrapper,
+
   ProductsHeading,
-  ProductTitle,
+  ProductWrapper,
+
   ProductCard,
+
   ProductImg,
   ProductInfo,
+
+  ProductName,
   ProductDesc,
   ProductPrice,
   ProductButton
 } from './ProductsElements';
+
 
 const Products = ({ heading, data }) => {
   return (
@@ -22,7 +27,7 @@ const Products = ({ heading, data }) => {
             <ProductCard key={index}>
               <ProductImg src={product.img} alt={product.alt} />
               <ProductInfo>
-                <ProductTitle>{product.name}</ProductTitle>
+                <ProductName>{product.name}</ProductName>
                 <ProductDesc>{product.desc}</ProductDesc>
                 <ProductPrice>{product.price}</ProductPrice>
                 <ProductButton>{product.button}</ProductButton>

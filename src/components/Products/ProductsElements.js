@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+/* ProductsHeading | ProductWrapper */
 export const ProductsContainer = styled.div`
   /* width: 100vw; */
   min-height: 100vh;
@@ -8,6 +9,13 @@ export const ProductsContainer = styled.div`
   color: #fff;
 `;
 
+export const ProductsHeading = styled.h1`
+  font-size: clamp(2rem, 2.5vw, 3rem);
+  text-align: center;
+  margin-bottom: 5rem;
+`;
+
+/* ProductCard | ProductCard | ProductCard */
 export const ProductWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +23,7 @@ export const ProductWrapper = styled.div`
   margin: 0 auto;
 `;
 
+/* ProductImg | ProductInfo */
 export const ProductCard = styled.div`
   margin: 0 2rem;
   line-height: 2;
@@ -28,17 +37,7 @@ export const ProductImg = styled.img`
   box-shadow: 8px 8px #fdc500;
 `;
 
-export const ProductsHeading = styled.h1`
-  font-size: clamp(2rem, 2.5vw, 3rem);
-  text-align: center;
-  margin-bottom: 5rem;
-`;
-
-export const ProductTitle = styled.h2`
-  font-weight: 400;
-  font-size: 1.5rem;
-`;
-
+/* ProductName | ProductDesc | ProductPrice | ProductButton */
 export const ProductInfo = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,6 +45,11 @@ export const ProductInfo = styled.div`
   align-items: center;
   padding: 2rem;
   text-align: center;
+`;
+
+export const ProductName = styled.h2`
+  font-weight: 400;
+  font-size: 1.5rem;
 `;
 
 export const ProductDesc = styled.p`

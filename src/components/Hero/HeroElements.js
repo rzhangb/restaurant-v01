@@ -1,9 +1,9 @@
 import styled from 'styled-components';
-import ImgBg from '../../images/pizza-3.jpg';
+import showcaseImg from '../../images/showcase.jpg';
 
 export const HeroContainer = styled.div`
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
-    url(${ImgBg});
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+    url(${showcaseImg});
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -20,14 +20,13 @@ export const HeroItems = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+
   height: 100vh;
   max-height: 100%;
   padding: 0 2rem;
-  width: 650px;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 1;
-  font-weight: bold;
+  width: 800px;
+
+  line-height: 1.3;
 
   @media screen and (max-width: 650px) {
     width: 100%;
@@ -35,15 +34,25 @@ export const HeroItems = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  font-size: clamp(2.5rem, 10vw, 5rem);
-  margin-bottom: 1rem;
-  box-shadow: 3px 5px #e9ba23;
-  letter-spacing: 3px;
+  font-size: 2.5rem;
+  font-family: 'Lemonada', cursive;
+  text-shadow: .1rem .1rem .3rem #333;
+  color: #FFF200;
+`;
+
+export const HeroH2 = styled.h2`
+  font-size: 1.8rem;
+  font-family: 'Lemonada', cursive;
+  text-shadow: .1rem .1rem .3rem #333;
+  color: #fff;
+  margin: 1rem 0;
 `;
 
 export const HeroP = styled.p`
-  font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
+
+  font-size: 1rem;
+  color: #ccc;
 `;
 
 export const HeroBtn = styled.button`
@@ -53,6 +62,7 @@ export const HeroBtn = styled.button`
   background: #e31837;
   color: #fff;
   transition: 0.2s ease-out;
+  border-radius: 3px;
 
   &:hover {
     background: #ffc500;

@@ -1,28 +1,31 @@
 import styled from 'styled-components';
-import { NavLink as Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FaPizzaSlice } from 'react-icons/fa';
+import logoImg from '../../images/logo-sasaya.jpg'
 
 export const Nav = styled.nav`
   background: transparent;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   font-weight: 700;
 `;
 
-export const NavLink = styled(Link)`
-  color: #fff;
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
+export const NavLogo = styled(Link)`
+height: 100%;
+width: 120px;
+border-radius: 3px;
 
-  @media screen and (max-width: 400px) {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-  }
+display: flex;
+justify-content: center;
+align-items: center;
+
+background-image: url(${logoImg});
+background-size: 100% 100%;
+background-position: center;
+background-repeat: no-repeat;
+
+opacity: 0.3;
 `;
 
 export const NavIcon = styled.div`
