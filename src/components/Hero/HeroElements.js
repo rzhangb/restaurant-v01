@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import showcaseImg from '../../images/showcase.jpg';
 
 export const HeroContainer = styled.div`
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)),
     url(${showcaseImg});
   height: 100vh;
   background-position: center;
@@ -34,15 +34,15 @@ export const HeroItems = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'Lemonada', cursive;
-  text-shadow: .1rem .1rem .3rem #333;
-  color: #FFF200;
+
+  color: #FFF200;  
 `;
 
 export const HeroH2 = styled.h2`
-  font-size: 1.8rem;
-  font-family: 'Lemonada', cursive;
+  font-size: 3rem;
+  font-family: 'Caveat', cursive;
   text-shadow: .1rem .1rem .3rem #333;
   color: #fff;
   margin: 1rem 0;
@@ -51,7 +51,9 @@ export const HeroH2 = styled.h2`
 export const HeroP = styled.p`
   margin-bottom: 2rem;
 
-  font-size: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+
   color: #ccc;
 `;
 
@@ -70,4 +72,19 @@ export const HeroBtn = styled.button`
     cursor: pointer;
     color: #000;
   }
+`;
+
+export const HeroH3 = styled.h3`
+  position: absolute;
+  right: 60px;
+  bottom: 100px;
+
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: #7CFC00;
+
+  color: rgb(218, 165, 32);  
+
+  transform: rotate(-20deg);
 `;

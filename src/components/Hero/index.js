@@ -8,7 +8,8 @@ import {
   HeroH1,
   HeroH2,
   HeroP,
-  HeroBtn
+  HeroBtn,
+  HeroH3,  
 } from './HeroElements';
 
 const Hero = () => {
@@ -26,10 +27,11 @@ const Hero = () => {
         <HeroItems>
           <HeroH1>Food That You Can't Resist</HeroH1>
           <HeroH2>Enjoy The Marvelous Taste</HeroH2>
-          <HeroP>We offers an expansive menu of Taiwanese and Chinese cuisine full of flavor. For us from Asia, We always miss our hometown food! With a wide range of meals including pork, fowl, beef, seafood, and tofu, we truly have a delicious option for everyone.</HeroP>
+          <HeroP>Extensive menu of Taiwanese and Chinese cuisine full of flavor. Miss our hometown food?  We offer a wide range of meals including pork, fowl, beef, seafood, and tofu, a truly delicious option for everyone.</HeroP>
           <HeroBtn>Place Order</HeroBtn>
         </HeroItems>
       </HeroContent>
+      <HeroH3>We Offer Takeout !</HeroH3>
     </HeroContainer>
   );
 };

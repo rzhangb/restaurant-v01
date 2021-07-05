@@ -1,16 +1,22 @@
 import React from 'react';
-import { Nav, NavLogo, NavIcon, Bars } from './NavbarElements';
+import { NavbarContainer, NavbarLogo, NavbarLinks, NavbarLink, NavbarSideIcon } from './NavbarElements';
+import Hamburger from 'hamburger-react';
 
 const Navbar = ({ toggle }) => {
   return (
     <>
-      <Nav>
-        <NavLogo to='/'></NavLogo>
-        <NavIcon onClick={toggle}>
-          <p>Menu</p>
-          <Bars />
-        </NavIcon>
-      </Nav>
+      <NavbarContainer>
+        <NavbarLogo to='/'></NavbarLogo>
+
+        <NavbarLinks>
+          <NavbarLink to='/'>604 433 3652</NavbarLink>
+          <NavbarLink to='/'>Reserve Table</NavbarLink>
+        </NavbarLinks>
+   
+        <NavbarSideIcon>
+          <Hamburger toggle={toggle} /> 
+        </NavbarSideIcon>     
+      </NavbarContainer>
     </>
   );
 };
