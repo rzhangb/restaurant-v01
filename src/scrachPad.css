@@ -10,21 +10,3 @@
 
 }
 
-
-
-/* export const NavLogo = styled(Link)`
-  color: #fff;
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  cursor: pointer;
-
-  padding-left: 20px;
-
-  @media screen and (max-width: 400px) {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-  }
-`; */
